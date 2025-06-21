@@ -108,8 +108,8 @@
 }
 
 .heading, .heading2 {
-  line-height: 1; /* Remove extra spacing that could push text visually off */
-  margin: 0;       /* Remove default margin from <h1> */
+  line-height: 1; 
+  margin: 0;      
   padding-bottom: 5px;
 }
 
@@ -130,7 +130,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 1; /* Must be above #home and #about backgrounds */
+  z-index: 1; 
   pointer-events: none;
   
 }
