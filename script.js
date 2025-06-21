@@ -28,3 +28,23 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scrolled');
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const aboutBtn = document.getElementById("about-btn");
+  const aboutSection = document.getElementById("about");
+
+  aboutBtn.addEventListener("click", () => {
+    aboutSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+
+  const homeBtn = document.getElementById("home-btn");
+  const homeSection = document.getElementById("home");
+
+  homeBtn.addEventListener("click", () => {
+    homeSection.scrollIntoView({
+      behavior: "smooth"
+    });
+  });
+});

@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Jay's Portfolio</title>
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/res.css" />
     <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <div id="header-container">
@@ -23,8 +25,8 @@
         </div>
         <div id="header-nav-container">
         <div class="nav-indicator"></div> <!-- the sliding pill -->
-          <button class="nav-button active">Home</button>
-          <button class="nav-button">About</button>
+          <button class="nav-button active" id="home-btn">Home</button>
+          <button class="nav-button" id="about-btn">About</button>
           <button class="nav-button">Projects</button>
           <button class="nav-button">Skills</button>
         </div>
@@ -46,19 +48,39 @@
 
           <div class="home-text-container">
             <div class="heading-container">
-              <h1 class="heading">Hello! I’m</h1>
-              <h1 class="heading2">Donald.</h1>
+              <h1 class="heading">Hello! I’m <strong class="strongD">Donald.</strong></h1>
             </div>
             <div class="subheading-container">
               <h2 class="subheading">a Computer Engineering student exploring the world of software, hardware, and everything in between.</h2>
             </div>
           </div>
       </div>
+
     </div>
 
-        <img src="resources/overlay2.png" class="overlay2" alt="Section Transition">
+    <img src="resources/transition1.png" class="transition1" alt="Section Transition">
 
     <div id="about">
+
+      <div class="about-content-container">
+        <div class="about-text-container">
+          <h2>About</h2>
+          <p>I'm a passionate Computer Engineering student driven by curiosity and a love for building things—whether it's crafting code, designing hardware, or exploring how technology can solve real-world problems. I enjoy learning, experimenting, and turning ideas into functional projects.</p>
+        </div>
+
+        <div class="ss-container">
+         <video autoplay muted loop playsinline>
+            <source src="resources/ss.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
+
+    <img src="resources/transition2.png" class="transition2" alt="Section Transition">
+
+    <div id="projects">
+    </div>
+
   </body>
 </html>
