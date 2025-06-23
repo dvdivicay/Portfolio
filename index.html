@@ -6,7 +6,8 @@
     <title>Jay's Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/res.css" />
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/chart.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,8 +28,8 @@
         <div class="nav-indicator"></div> <!-- the sliding pill -->
           <button class="nav-button active" id="home-btn">Home</button>
           <button class="nav-button" id="about-btn">About</button>
-          <button class="nav-button">Projects</button>
-          <button class="nav-button">Skills</button>
+          <button class="nav-button" id="projects-btn">Projects</button>
+          <button class="nav-button" id="skills-btn">Skills</button>
         </div>
       </header>
     </div>
@@ -41,30 +42,59 @@
       <div class="home-content-container">
 
           <div class="profile-container">
-            <div class="profile-image-container">
+            <div class="profile-image-blob">
               <img src="resources/profile.jpg" alt="Profile Picture" class="profile-image">
             </div>
           </div>
 
           <div class="home-text-container">
             <div class="heading-container">
-              <h1 class="heading">Hello! I’m <strong class="strongD">Donald.</strong></h1>
+              <h1 class="heading">Hello! I’m <span class="strongD">Donald.</span></h1>
             </div>
             <div class="subheading-container">
               <h2 class="subheading">a Computer Engineering student exploring the world of software, hardware, and everything in between.</h2>
             </div>
+            <div class="socials-container">
+              <div class="socials-buttons-container">
+
+                <button class="socials-button" onclick="window.open('https://www.facebook.com/JRASOXS/', '_blank')">
+                  <img src="resources/fbicon.png" alt="Facebook Logo" class="socials-icon">
+                </button>
+
+                <button class="socials-button" onclick="window.open('https://github.com/dvdivicay', '_blank')">
+                  <img src="resources/ghicon.png" alt="Github Logo" class="socials-icon">
+                </button>
+
+                <button class="socials-button" onclick="window.open('https://www.instagram.com/heyy.jay23', '_blank')">
+                  <img src="resources/igicon.png" alt="Instagram Logo" class="socials-icon">
+                </button>
+
+                <button class="socials-button" onclick="window.open('https://www.tiktok.com/@dvdivicay23', '_blank')">
+                  <img src="resources/tiktokicon.png" alt="TikTok Logo" class="socials-icon">
+                </button>
+
+                <button class="socials-button" onclick="window.open('https://www.youtube.com/@dvdivicay23', '_blank')">
+                  <img src="resources/yticon.png" alt="YouTube Logo" class="socials-icon">
+                </button>
+              </div>
+            </div>
           </div>
       </div>
-
     </div>
 
+    
     <img src="resources/transition1.png" class="transition1" alt="Section Transition">
 
     <div id="about">
-
+      <div class="video-background-container">
+        <video autoplay muted loop playsinline class="video-background">
+          <source src="resources/skills.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="about-content-container">
         <div class="about-text-container">
-          <h2>About</h2>
+          <h2 class="about-heading">About</h2>
           <p>I'm a passionate Computer Engineering student driven by curiosity and a love for building things—whether it's crafting code, designing hardware, or exploring how technology can solve real-world problems. I enjoy learning, experimenting, and turning ideas into functional projects.</p>
         </div>
 
@@ -80,7 +110,70 @@
     <img src="resources/transition2.png" class="transition2" alt="Section Transition">
 
     <div id="projects">
+      <div class="projects-content-container">
+        <div class="projects-heading-container">
+          <h2 class="projects-heading">My Projects</h2>
+        </div>
+        <div class="projects-tiles-container">
+
+          <div class="project-tile">
+            <div class="project-image-container">
+              <img src="resources/moneymanager.jpg" alt="Project 1" class="project-image">
+            </div>
+            <h3 class="project-title">Money Manager</h3>
+            <div class="project-overlay" onclick="window.open('https://github.com/dvdivicay/MoneyManager', '_blank')">
+            <p class="project-description">
+              A money management app that helps users track their expenses and income, providing insights into their financial habits. Built with Java and JavaFX, it features a user-friendly interface for easy navigation and data entry. SQL is used for data storage, ensuring that user data is securely saved and easily retrievable.
+            </p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-image-container">
+              <img src="resources/nitromario.png" alt="Project 2" class="project-image">
+            </div>
+            <h3 class="project-title">NitroMario Site</h3>
+            <div class="project-overlay" onclick="window.open('https://github.com/Dyan-p0l/nitro-mario-website', '_blank')">
+            <p class="project-description">
+              An educational website about the nitrogen cycle, designed to provide comprehensive information on the topic. The site features interactive elements and engaging content to enhance the learning experience. It is built using HTML, CSS, and JavaScript, ensuring a responsive design that works well on various devices.
+            </p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-image-container">
+              <img src="resources/bookhive.png" alt="Project 3" class="project-image">
+            </div>
+            <h3 class="project-title">BookHive</h3>
+            <div class="project-overlay" onclick="window.open('https://github.com/Dyan-p0l/BOOKHIVE', '_blank')">
+            <p class="project-description">
+              A library management system that simplifies the process of managing library resources. It allows users to search for books, check availability, and manage their borrowing history. The system is built with C#, ensuring a robust and scalable solution for library management. It features a user-friendly interface and efficient backend processing to handle multiple users and transactions seamlessly.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <img src="resources/transition3.png" class="transition3" alt="Section Transition">
+
+    <div id="skills">
+      <div class="video-background-container">
+        <video autoplay muted loop playsinline class="video-background">
+          <source src="resources/skills.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+      <div class="skills-content-container">
+        <div class="skills-label-container">
+          <h2 class="skills-label">S<br>K<br>I<br>L<br>L<br>S<br>E<br>T</h2>
+        </div>
+        <div class="skills-graph-container">
+          <canvas id="skills-chart" width="700" height="700"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
   </body>
 </html>
