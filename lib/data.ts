@@ -12,7 +12,7 @@ export const site = {
     github: "https://github.com/dvdivicay",
     linkedin: "https://www.linkedin.com/in/dvdivicay23/",
     instagram: "https://www.instagram.com/heyy.jay23",
-    facebook: "https://www.facebook.com/JRASOXS/",
+    facebook: "https://www.facebook.com/JRASOXS",
   },
 };
 
@@ -136,16 +136,20 @@ export const projects: Project[] = [
   },
 ];
 
-export const skillGroups = [
+// Each skill renders a brand logo (Simple Icons slug via `logo`) when one
+// exists, otherwise a themed inline SVG icon (`icon`).
+export type SkillItem = { label: string; icon?: string; logo?: string };
+
+export const skillGroups: { title: string; icon: string; items: SkillItem[] }[] = [
   {
     title: "Embedded & Firmware",
     icon: "cpu",
     items: [
-      { icon: "code", label: "Embedded C/C++" },
+      { logo: "cplusplus", label: "Embedded C/C++" },
       { icon: "cpu", label: "Zephyr RTOS" },
       { icon: "refresh", label: "FreeRTOS" },
       { icon: "bus", label: "Driver Development — I2C, UART, SPI" },
-      { icon: "bluetooth", label: "BLE & RS485 Modbus" },
+      { logo: "bluetooth", label: "BLE & RS485 Modbus" },
       { icon: "wave", label: "Sensor Integration & Data Acquisition" },
       { icon: "layers", label: "Firmware Architecture & Modular Design" },
     ],
@@ -154,10 +158,10 @@ export const skillGroups = [
     title: "Hardware & Tools",
     icon: "chip",
     items: [
-      { icon: "chip", label: "ESP32 / ESP8266" },
-      { icon: "radio", label: "Nordic nRF" },
-      { icon: "bluetooth", label: "nRF Connect SDK" },
-      { icon: "circuit", label: "PCB Design (KiCad)" },
+      { logo: "espressif", label: "ESP32 / ESP8266" },
+      { logo: "nordicsemiconductor", label: "Nordic nRF" },
+      { logo: "nordicsemiconductor", label: "nRF Connect SDK" },
+      { logo: "kicad", label: "PCB Design (KiCad)" },
       { icon: "wrench", label: "Hardware Debugging Tools" },
       { icon: "activity", label: "Signal & Bring-up Validation" },
     ],
@@ -225,6 +229,7 @@ export const credentials = [
     items: [
       { name: "Overall Best Paper", meta: "IIEE Engineering Research Colloquia 2026" },
       { name: "Best Paper — Circuits, Sensors & Devices", meta: "IIEE Engineering Research Colloquia 2026" },
+      { name: "Academic Excellence Awardee", meta: "Cebu Technological University - Batch Astra" },
     ],
   },
 ];

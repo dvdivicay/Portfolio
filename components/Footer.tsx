@@ -1,5 +1,5 @@
 import { site } from "@/lib/data";
-import { Github, Linkedin, Instagram, Mail } from "./Icons";
+import { Github, Linkedin, Instagram, Facebook, Mail } from "./Icons";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -23,6 +23,9 @@ export default function Footer() {
           </a>
           <a href={site.socials.instagram} target="_blank" rel="noopener" className="social" aria-label="Instagram">
             <Instagram />
+          </a>
+          <a href={site.socials.facebook} target="_blank" rel="noopener" className="social" aria-label="Facebook">
+            <Facebook />
           </a>
           <a href={`mailto:${site.email}`} className="social" aria-label="Email">
             <Mail />

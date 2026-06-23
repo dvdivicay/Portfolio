@@ -31,10 +31,21 @@ export default function Skills() {
                 </h3>
                 <ul className="skill-list">
                   {group.items.map((item) => {
-                    const ItemIcon = skillIcon[item.icon];
+                    const ItemIcon = item.icon ? skillIcon[item.icon] : undefined;
                     return (
                       <li key={item.label}>
-                        {ItemIcon && <ItemIcon />}
+                        {item.logo ? (
+                          <img
+                            src={`https://cdn.simpleicons.org/${item.logo}`}
+                            alt=""
+                            className="skill-logo"
+                            loading="lazy"
+                            width={20}
+                            height={20}
+                          />
+                        ) : (
+                          ItemIcon && <ItemIcon />
+                        )}
                         {item.label}
                       </li>
                     );
