@@ -102,7 +102,7 @@ export const projects: Project[] = [
   {
     art: "fish",
     flag: "Featured · Award-winning",
-    title: "Non-Invasive Fish Freshness Assessment",
+    title: "PRESSKO: Non-Invasive Fish Freshness Assessment",
     desc: "An intelligent bio-capacitance system that grades fish freshness without ever cutting into the flesh, classifying it in real time. Awarded Overall Best Paper at the IIEE Engineering Research Colloquia 2026.",
     tags: ["Bio-Capacitance", "Sensor DSP", "Classification"],
   },
