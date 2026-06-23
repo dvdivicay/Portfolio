@@ -1,6 +1,6 @@
 import { site } from "@/lib/data";
 import { asset } from "@/lib/config";
-import { ArrowRight, ArrowDown, Cpu, Wave, Github, Linkedin, Mail, Facebook } from "./Icons";
+import { ArrowRight, ArrowDown, Cpu, Code, Github, Linkedin, Mail, Facebook } from "./Icons";
 
 export default function Hero() {
   return (
@@ -95,7 +95,7 @@ export default function Hero() {
               <Cpu /> Zephyr RTOS
             </span>
             <span className="chip chip-3">
-              <Wave /> BLE &amp; Modbus
+              <Code /> Firmware Development
             </span>
           </div>
         </div>
