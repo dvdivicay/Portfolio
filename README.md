@@ -1,12 +1,14 @@
 # Donald V. Divicay Jr. — Portfolio
 
-Personal portfolio for an **Embedded Software Engineer**, built with
-[Next.js](https://nextjs.org/) (App Router) and statically exported for
-**GitHub Pages**. Live at: `https://dvdivicay.github.io/Portfolio/`
+My personal portfolio as an **Embedded Software Engineer** — firmware, low-level
+drivers, and multi-sensor systems. Built with [Next.js](https://nextjs.org/)
+(App Router) and statically exported for **GitHub Pages**.
+
+🔗 Live: `https://dvdivicay.github.io/Portfolio/`
 
 ## Tech stack
 
-- **Next.js 15** (App Router, React 19, TypeScript)
+- **Next.js 16** (App Router, React 19, TypeScript)
 - **Static export** (`output: "export"`) — no server required
 - **next/font** (Montserrat, Inter, JetBrains Mono) + [Devicon](https://devicon.dev/) logos
 - Plain CSS with design tokens (theme: "Refined Earth")
@@ -21,7 +23,7 @@ npm run dev      # http://localhost:3000
 ## Production build
 
 ```bash
-npm run build    # outputs static site to ./out
+npm run build    # outputs the static site to ./out
 ```
 
 ## Deployment
@@ -33,16 +35,11 @@ static site and publishes it to GitHub Pages.
 deployment → Source** and select **GitHub Actions**.
 
 > The site is served from a project subpath, so `next.config.mjs` sets
-> `basePath: "/Portfolio"` in production. If you rename the repo (or move to a
-> `username.github.io` repo), update that value.
+> `basePath: "/Portfolio"` in production. If I rename the repo (or move to a
+> `username.github.io` repo), I update that value.
 
 ## Editing content
 
-All copy/data lives in [`lib/data.ts`](lib/data.ts) — experience, projects,
-skills, education, certs, awards, and social links. Edit there; the components
-render from it.
-
-## To do
-
-- [ ] Add your resume PDF at `public/Donald-Divicay-Resume.pdf` (the Resume
-      buttons link to it).
+All copy and data live in [`lib/data.ts`](lib/data.ts) — experience, projects,
+skills, education, certifications, awards, and social links. The components
+render from there, so updating the site is just editing that file.
