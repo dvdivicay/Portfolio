@@ -33,7 +33,7 @@ export const marqueeItems = [
 export const stats = [
   { num: "3", suffix: "", label: "Professional engineering roles" },
   { num: "🏆", suffix: "", label: "Overall Best Paper — IIEE Research Colloquia 2026", highlight: true },
-  { num: "4", suffix: "", label: "Shipped hardware & full-stack projects" },
+  { num: "6", suffix: "", label: "Shipped hardware & full-stack projects" },
   { num: "9", suffix: "", label: "Programming languages (C → Verilog)" },
 ];
 
@@ -84,7 +84,7 @@ export const experience: Experience[] = [
 ];
 
 export type Project = {
-  art: "fish" | "firmware" | "zentask" | "fuel";
+  art: "fish" | "firmware" | "zentask" | "fuel" | "robot" | "cashwise";
   flag: string;
   title: string;
   desc: string;
@@ -96,29 +96,43 @@ export const projects: Project[] = [
     art: "fuel",
     flag: "Featured · Current work",
     title: "Capacitive Fuel-Level Sensor with Edge AI",
-    desc: "A capacitive fuel-level sensing system built on the Nordic nRF54LM20B with on-device AI inferencing — delivering accurate, real-time fuel monitoring for fleet trucks.",
+    desc: "A capacitive fuel-level sensor on the Nordic nRF54LM20B that runs AI inference right at the edge — giving fleet operators accurate, tamper-resistant fuel readings in real time, truck by truck.",
     tags: ["nRF54LM20B", "Edge AI", "Capacitive Sensing", "Fleet IoT"],
   },
   {
     art: "fish",
     flag: "Featured · Award-winning",
     title: "Non-Invasive Fish Freshness Assessment",
-    desc: "An intelligent bio-capacitance sensing system that classifies fish freshness non-invasively in real time — awarded Overall Best Paper at the IIEE Engineering Research Colloquia 2026.",
+    desc: "An intelligent bio-capacitance system that grades fish freshness without ever cutting into the flesh, classifying it in real time. Awarded Overall Best Paper at the IIEE Engineering Research Colloquia 2026.",
     tags: ["Bio-Capacitance", "Sensor DSP", "Classification"],
   },
   {
     art: "firmware",
     flag: "Firmware",
-    title: "Multi-Sensor Firmware Platform",
-    desc: "A modular Zephyr RTOS firmware platform integrating multiple ambient-parameter sensors with centralized data management and real-time monitoring.",
+    title: "Multi-Sensor Ambient Sensing Platform",
+    desc: "A modular Zephyr RTOS platform that unifies a suite of ambient sensors under one clean architecture — centralized data management, real-time monitoring, and firmware built to scale.",
     tags: ["Zephyr RTOS", "Drivers", "Real-time"],
+  },
+  {
+    art: "robot",
+    flag: "Robotics",
+    title: "Sumo x Line-Follower x Balloon Popping Robot",
+    desc: "A three-personality robot that switches between aggressive sumo combat, balloon popping, and precise line-following. A full hardware build — custom PCB, 3D-printed chassis, sensor integration, and real-time control firmware.",
+    tags: ["Arduino", "C++", "KiCad", "Fusion 360"],
   },
   {
     art: "zentask",
     flag: "Full-stack",
     title: "ZenTask",
-    desc: "A full-stack task-management web app built with React, Node.js, and MongoDB — featuring authentication and efficient task tracking.",
-    tags: ["React", "Node.js", "MongoDB"],
+    desc: "A full-stack task manager built on Next.js 15 and Supabase, styled with Tailwind CSS — secure authentication and fast, focused task tracking that stays out of your way.",
+    tags: ["Next.js", "Supabase", "Tailwind CSS"],
+  },
+  {
+    art: "cashwise",
+    flag: "Mobile",
+    title: "CashWise",
+    desc: "A budget-tracking app in Flutter that makes daily spending effortless — quick expense logging, category management, and interactive charts, all backed by fast on-device SQLite storage.",
+    tags: ["Flutter", "Dart", "SQLite"],
   },
 ];
 

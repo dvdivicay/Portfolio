@@ -1,6 +1,57 @@
 import { projects } from "@/lib/data";
 
-function ProjectArt({ art }: { art: "fish" | "firmware" | "zentask" | "fuel" }) {
+function ProjectArt({
+  art,
+}: {
+  art: "fish" | "firmware" | "zentask" | "fuel" | "robot" | "cashwise";
+}) {
+  if (art === "robot") {
+    return (
+      <div className="project-art art-robot" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          {/* line on the ground to follow */}
+          <path className="track" d="M14 99 q 23 -16 46 0 t 46 0" />
+          {/* antenna */}
+          <line className="bot-antenna" x1="60" y1="36" x2="60" y2="28" />
+          <circle className="bot-dot" cx="60" cy="26" r="3" />
+          {/* body */}
+          <rect className="bot-body" x="38" y="36" width="44" height="40" rx="8" />
+          {/* eyes / sensors */}
+          <circle className="bot-eye" cx="50" cy="52" r="4" />
+          <circle className="bot-eye" cx="70" cy="52" r="4" />
+          {/* sensor bar */}
+          <rect className="bot-bar" x="48" y="63" width="24" height="5" rx="2.5" />
+          {/* wheels */}
+          <rect className="bot-wheel" x="30" y="50" width="8" height="22" rx="4" />
+          <rect className="bot-wheel" x="82" y="50" width="8" height="22" rx="4" />
+          {/* line-follower sensor array */}
+          <circle className="bot-sensor" cx="52" cy="81" r="2" />
+          <circle className="bot-sensor" cx="60" cy="83" r="2" />
+          <circle className="bot-sensor" cx="68" cy="81" r="2" />
+        </svg>
+      </div>
+    );
+  }
+  if (art === "cashwise") {
+    return (
+      <div className="project-art art-cashwise" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          {/* phone */}
+          <rect className="phone" x="38" y="22" width="38" height="74" rx="8" />
+          <line className="phone-notch" x1="51" y1="29" x2="63" y2="29" />
+          {/* bar chart */}
+          <rect className="bar" x="45" y="66" width="6" height="14" rx="2" />
+          <rect className="bar" x="54" y="56" width="6" height="24" rx="2" />
+          <rect className="bar" x="63" y="48" width="6" height="32" rx="2" />
+          {/* upward trend */}
+          <path className="trend" d="M45 62 L54 52 L63 44" />
+          {/* coin */}
+          <circle className="coin" cx="80" cy="34" r="9" />
+          <text className="coin-mark" x="80" y="38" textAnchor="middle">₱</text>
+        </svg>
+      </div>
+    );
+  }
   if (art === "fuel") {
     return (
       <div className="project-art art-fuel" aria-hidden="true">

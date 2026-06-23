@@ -811,6 +811,8 @@ ul {
 .art-firmware { background: linear-gradient(150deg, #a27b5c, #8a6849); }
 .art-zentask { background: linear-gradient(150deg, #4a5b50, #6b5640); }
 .art-fuel { background: linear-gradient(150deg, #2c3930, #6b5640); }
+.art-robot { background: linear-gradient(150deg, #8a6849, #2c3930); }
+.art-cashwise { background: linear-gradient(150deg, #3f4f44, #6b5640); }
 
 .art-fish .fish-body,
 .art-fish .fish-tail { fill: var(--cream); }
@@ -832,6 +834,20 @@ ul {
 .art-fuel .probe { stroke: var(--bronze); stroke-width: 2.5; stroke-linecap: round; }
 .art-fuel .ai-node { fill: var(--cream); }
 .art-fuel .ai-link { fill: none; stroke: rgba(220, 215, 201, 0.55); stroke-width: 1.5; }
+.art-robot .track { fill: none; stroke: rgba(220, 215, 201, 0.5); stroke-width: 2.5; stroke-linecap: round; stroke-dasharray: 6 5; }
+.art-robot .bot-body { fill: none; stroke: var(--cream); stroke-width: 2.5; }
+.art-robot .bot-antenna { stroke: var(--cream); stroke-width: 2.5; stroke-linecap: round; }
+.art-robot .bot-dot { fill: var(--bronze); }
+.art-robot .bot-eye { fill: var(--bronze); }
+.art-robot .bot-bar { fill: var(--cream); opacity: 0.85; }
+.art-robot .bot-wheel { fill: var(--cream); }
+.art-robot .bot-sensor { fill: var(--bronze); }
+.art-cashwise .phone { fill: none; stroke: var(--cream); stroke-width: 2.5; }
+.art-cashwise .phone-notch { stroke: var(--cream); stroke-width: 2; stroke-linecap: round; }
+.art-cashwise .bar { fill: var(--cream); opacity: 0.85; }
+.art-cashwise .trend { fill: none; stroke: var(--bronze); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.art-cashwise .coin { fill: var(--bronze); }
+.art-cashwise .coin-mark { fill: var(--forest-800); font-family: var(--font-display), sans-serif; font-weight: 700; font-size: 11px; }
 
 .project-body {
   padding: 1.4rem;
