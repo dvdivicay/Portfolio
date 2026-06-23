@@ -1,5 +1,5 @@
 import { skillGroups, techGroups, credentials } from "@/lib/data";
-import { groupIcon } from "./Icons";
+import { groupIcon, skillIcon } from "./Icons";
 
 function TechIcon({ icon }: { icon: string }) {
   if (icon.startsWith("badge:")) {
@@ -30,9 +30,15 @@ export default function Skills() {
                   {group.title}
                 </h3>
                 <ul className="skill-list">
-                  {group.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
+                  {group.items.map((item) => {
+                    const ItemIcon = skillIcon[item.icon];
+                    return (
+                      <li key={item.label}>
+                        {ItemIcon && <ItemIcon />}
+                        {item.label}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             );

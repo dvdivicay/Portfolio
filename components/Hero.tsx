@@ -45,9 +45,8 @@ export default function Hero() {
             I build <strong>reliable firmware</strong> and low-level drivers —
             from multi-sensor architectures on{" "}
             <span className="kw">Zephyr&nbsp;RTOS</span> &amp;{" "}
-            <span className="kw">ESP-IDF</span> to <span className="kw">BLE</span>{" "}
-            &amp; <span className="kw">RS485&nbsp;Modbus</span> pipelines that
-            keep data flowing in the real world.
+            <span className="kw">ESP-IDF</span> to <span className="kw">wireless telemetry</span>{" "}
+            pipelines that keep data flowing in the real world.
           </p>
 
           <div className="hero-cta">

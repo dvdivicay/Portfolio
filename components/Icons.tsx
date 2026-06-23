@@ -54,6 +54,30 @@ export const Award = (p: IconProps) => (
 export const Wave = (p: IconProps) => (
   <Stroke {...p}><path d="M3 12h3l2-5 4 14 3-9h6" /></Stroke>
 );
+export const Activity = (p: IconProps) => (
+  <Stroke {...p}><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></Stroke>
+);
+export const Refresh = (p: IconProps) => (
+  <Stroke {...p}><path d="M21 12a9 9 0 1 1-2.64-6.36" /><path d="M21 4v5h-5" /></Stroke>
+);
+export const Bus = (p: IconProps) => (
+  <Stroke {...p}><circle cx="5" cy="6" r="2" /><circle cx="5" cy="18" r="2" /><circle cx="19" cy="12" r="2" /><path d="M7 6h6a4 4 0 0 1 4 4M7 18h6a4 4 0 0 0 4-4" /></Stroke>
+);
+export const Bluetooth = (p: IconProps) => (
+  <Stroke {...p}><path d="M7 7l10 10-5 5V2l5 5L7 17" /></Stroke>
+);
+export const Layers = (p: IconProps) => (
+  <Stroke {...p}><path d="m12 2 9 5-9 5-9-5 9-5Z" /><path d="m3 12 9 5 9-5" /><path d="m3 17 9 5 9-5" /></Stroke>
+);
+export const Radio = (p: IconProps) => (
+  <Stroke {...p}><circle cx="12" cy="12" r="1.5" /><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7M6 6a9 9 0 0 0 0 12M18 6a9 9 0 0 1 0 12" /></Stroke>
+);
+export const Circuit = (p: IconProps) => (
+  <Stroke {...p}><rect x="4" y="4" width="16" height="16" rx="2" /><circle cx="9" cy="9" r="1.4" /><circle cx="15" cy="15" r="1.4" /><path d="M9 4v3.6M9 10.4V13a2 2 0 0 0 2 2h2.6M20 9h-3.6M15 13.6V12a2 2 0 0 0-2-2h-2.6" /></Stroke>
+);
+export const Wrench = (p: IconProps) => (
+  <Stroke {...p}><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z" /></Stroke>
+);
 export const Instagram = (p: IconProps) => (
   <Stroke {...p}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></Stroke>
 );
@@ -97,4 +121,20 @@ export const groupIcon: Record<string, (p: IconProps) => React.ReactElement> = {
   edu: Edu,
   cert: Cert,
   award: Award,
+};
+
+/** Map a string key from data.ts to a per-skill stroke icon. */
+export const skillIcon: Record<string, (p: IconProps) => React.ReactElement> = {
+  code: Code,
+  cpu: Cpu,
+  refresh: Refresh,
+  bus: Bus,
+  bluetooth: Bluetooth,
+  wave: Wave,
+  layers: Layers,
+  chip: Chip,
+  radio: Radio,
+  circuit: Circuit,
+  wrench: Wrench,
+  activity: Activity,
 };

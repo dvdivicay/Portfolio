@@ -913,18 +913,18 @@ ul {
 }
 .skill-group-title .icon { color: var(--bronze); }
 .skill-list li {
-  position: relative;
-  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   color: var(--muted);
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.55rem;
 }
-.skill-list li::before {
-  content: "›";
-  position: absolute;
-  left: 0;
+.skill-list li .icon {
+  width: 1.1rem;
+  height: 1.1rem;
   color: var(--bronze);
-  font-weight: 700;
+  flex: none;
 }
 .skill-tech {
   display: flex;
